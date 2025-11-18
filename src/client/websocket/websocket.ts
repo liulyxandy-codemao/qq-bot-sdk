@@ -107,7 +107,7 @@ export class Ws {
                 }, this.heartbeatInterval);
             }
 
-            // 收到服务端锻炼重连的通知
+            // 收到服务端断线重连的通知
             if (wsRes.op === OpCode.RECONNECT) {
                 // 通知会话，当前已断线
                 this.event.emit(SessionEvents.EVENT_WS, { eventType: SessionEvents.RECONNECT });

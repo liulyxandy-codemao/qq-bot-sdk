@@ -28,7 +28,7 @@
     },
     "scripts": {
         "dev": "npm run clean & cross-env NODE_ENV=dev rollup -c rollup.config.js -w",
-        "build": "npm run clean &cross-env NODE_ENV=production rollup -c rollup.config.js",
+        "build": "npm run clean & cross-env NODE_ENV=production rollup -c rollup.config.js",
         "clean": "rimraf lib es typings",
         "test": "jest --config jest.config.json",
         "linkdev": "node scripts/dev.js"
@@ -54,6 +54,7 @@
         "@rollup/plugin-node-resolve": "^13.0.4",
         "@rollup/plugin-replace": "^3.0.0",
         "@types/jest": "^27.0.2",
+        "@types/node": "^18.0.0",
         "@types/ws": "^8.5.3",
         "cross-env": "^7.0.3",
         "jest": "^25.3.0",

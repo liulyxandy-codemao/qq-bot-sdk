@@ -4,7 +4,6 @@ import { APIVersion, Config, ConfigLogger } from './types/openapi';
 import { GetWsParam } from '@src/types';
 import WebsocketClient from './client/client';
 import log from 'loglevel';
-log.setLevel('info');
 log.setLevel('trace');
 
 // 注册v1接口
